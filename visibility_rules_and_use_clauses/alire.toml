@@ -1,0 +1,11 @@
+name = "visibility_rules_and_use_clauses"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Your Name"]
+maintainers = ["Your Name <example@example.com>"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["visibility_rules_and_use_clauses"]
