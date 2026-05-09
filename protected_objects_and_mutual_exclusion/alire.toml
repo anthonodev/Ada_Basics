@@ -1,0 +1,11 @@
+name = "protected_objects_and_mutual_exclusion"
+description = ""
+version = "0.1.0-dev"
+
+authors = ["Your Name"]
+maintainers = ["Your Name <example@example.com>"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["protected_objects_and_mutual_exclusion"]
