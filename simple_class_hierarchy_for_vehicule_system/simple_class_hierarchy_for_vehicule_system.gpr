@@ -1,0 +1,22 @@
+with "config/simple_class_hierarchy_for_vehicule_system_config.gpr";
+project Simple_Class_Hierarchy_For_Vehicule_System is
+
+   for Source_Dirs use ("src/", "config/");
+   for Object_Dir use "obj/" & Simple_Class_Hierarchy_For_Vehicule_System_Config.Build_Profile;
+   for Create_Missing_Dirs use "True";
+   for Exec_Dir use "bin";
+   for Main use ("simple_class_hierarchy_for_vehicule_system.adb");
+
+   package Compiler is
+      for Default_Switches ("Ada") use Simple_Class_Hierarchy_For_Vehicule_System_Config.Ada_Compiler_Switches;
+   end Compiler;
+
+   package Binder is
+      for Switches ("Ada") use ("-Es"); --  Symbolic traceback
+   end Binder;
+
+   package Install is
+      for Artifacts (".") use ("share");
+   end Install;
+
+end Simple_Class_Hierarchy_For_Vehicule_System;
